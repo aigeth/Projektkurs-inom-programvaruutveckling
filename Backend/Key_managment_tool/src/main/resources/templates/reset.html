@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Forgot password</title>
+</head>
+<body>
+	<h1>Reset Password</h1>
+
+	<form action="#" th:action="@{/changePassword(token=${token})}"
+		th:object="${user}" method="post">
+		New password:<br> <input type="password" th:field="*{password}">
+		<br>
+		<br> <input type="submit" value="Submit">
+	</form>
+</body>
+</html>
